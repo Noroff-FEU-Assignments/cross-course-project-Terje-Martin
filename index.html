@@ -3,31 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Get real authentic, hand-crafted guitars from Guitar Kings" />
+    <meta name="description" content="" />
     <title>Rainy Days | Home</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-<body>    
-      <div class="hero">
+<body> 
+    <div class="header">
+    <div class="container">
         <div class="navbar">
-            <img class="logo" src="images/RainyDays_Logo.png">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Women</a></li>
-            </ul>
-            <div class="navbar-icons">
-              <img src="images/heart.png">
-              <img src="images/shopping-bag.png">
-              <img src="images/hamburger.png">
-            </div>
-              </div>
-              <div class="bg"> 
-              </div>
-            </div> 
+            <div class="logo">
+            <img src="images/RainyDays_Logo.png" width="150px">
+             </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                    <img class="bag" src="images/shopping-bag.png" width="25px" height="25px">
+                    <img class="bag" src="images/heart.png" width="25px" height="25px">
+                    <img src="images/hamburger.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Newest arrival</h1>
+                    <p>Check out the newest arrival for this winter!!</p>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+
                 </div>
+                <div class="col-2">
+                    <img src="images/pic2.png">
+                </div>
+            </div>
+    </div>
+</div>
+
+    <div class="container2">
+        <h2 class="title">Best Selling Products</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="images/jacket1.png">
+                <h4>Yuki Winer Jacket</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$499.00</p>
+            </div>
+            <div class="col-3">
+                <img src="images/jacket2.png">
+                <h4>Yuki Winer Jacket</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <p>$499.00</p>
+            </div>
+            <div class="col-3">
+                <img src="images/jacket8.png">
+                <h4>Yuki Winer Jacket</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$499.00</p>
+            </div>
+            <div class="col-3">
+                <img src="images/jacket7.png">
+                <h4>Yuki Winer Jacket</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$499.00</p>
+            </div>
+            
+        
+            
+    </div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Information</h3>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Return Policy</li>
+                    <li>Shipping</li>
+                </ul>
+            </div>
+            <div class="footer-col1">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright &copy; 2021</p>
+    </div>
+</div>
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
 
 </body>
 </html>
