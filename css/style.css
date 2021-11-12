@@ -98,7 +98,7 @@ p{
 }
 .col-3{
     flex-basis: 25%;
-    padding: 10px;
+    padding: 40px;
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
@@ -229,7 +229,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .container-contact .contactinfo{
     width: 50%;
@@ -244,40 +244,260 @@ text-align: center;
 .contact-icons{
     min-width: 60px;
     height: 60px;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container-contact .contactinfo .contact-box .contact-text {
+    display: flex;
+    margin-left: 15px;
+    font-size: 15px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container-contact .contactinfo .contact-box .contact-text h3{
+    font-weight: 500;
+    color: #333;
+}
+.contact-form{
+    width: 40%;
+    padding: 50px;
+    background: #fff;
+}
+.contact-form h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contact-form .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container-contact{
+        flex-direction: column;
+    }
+    .container-contact .contactinfo {
+        margin-bottom: 40px;
+    }
+    .container-contact .contactinfo,
+    .contact-form
+    {
+        width: 100%;
+    }
+}
+
+
+.small-container{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+.row-50{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.single-product{
+    margin-top: 80px;
+}
+.col-50 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.single-product .col-50 img{
+    padding: 0;
+}
+.single-product .col-50{
+    padding: 20px;
+}
+.col-50{
+    flex-basis: 50%;
+    min-width: 300px;    
+}
+.col-50 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+input:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+p{
+    color: #555;
+    
+}
+
+.btn-prod{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn-prod:hover{
+    background: #563434;
 }
 
 
 
 
 
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
 
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
 
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 350px;
+    }
+    td:last-child{
+        text-align: right;
+    }
+    th:last-child{
+        text-align: right;
+    }
 
+.cart-btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 20px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+    float: right;
+    
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cart-btn:hover{
+    background: #ce3c37;
+}
 
 
 
