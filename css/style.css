@@ -32,10 +32,7 @@ nav ul li{
     transition: 0.5s;
 }
 
-nav li:hover{
-    background: #45c1e0;
-   
-}
+
 
 a{
     text-decoration: none;
