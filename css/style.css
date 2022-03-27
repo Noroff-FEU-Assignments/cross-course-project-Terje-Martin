@@ -139,7 +139,7 @@ h4{
 .footer{
     background: #000;
     color: #8a8a8a;
-    font-size: 14px;
+    font-size: 18px;
     padding: 60px 0 20px;
 }
 .footer h3{
@@ -320,6 +320,59 @@ text-align: center;
     font-size: 18px;
 }
 
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+form {
+    padding: 2em;
+    background: white;
+    border-radius: 1rem;
+}
+
+input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: rgb(145, 42, 42);
+    border: none;
+    width: 200px;
+    padding: 1rem;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+button:disabled {
+    background: lightgray;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.message {
+    background: rgb(136, 35, 60);
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
 
 @media (max-width: 991px)
 {
@@ -485,7 +538,7 @@ td img{
     color: #fff;
     padding: 10px 30px;
     margin: 20px 0;
-    border-radius: 30px;
+    border-radius: 20px;
     transition: 0.5s;
     float: right;
     
